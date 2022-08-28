@@ -1,0 +1,218 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+
+.container {
+	min-height: 100%;
+}
+
+.wrapper {
+		max-width: 1920px;
+		font-family: Arial, Helvetica, sans-serif;
+}
+
+.products-of-the-week {
+	max-width: 1180px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+
+.products-of-the-week__title {
+	text-align: center;
+	margin: 0px auto;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 72px;
+	color: #000000;
+	max-width: 481px;
+	height: 72px;
+}
+
+@media (max-width: 1210px) {
+	.products-of-the-week__title {
+		font-size: 40px;
+	}
+}
+
+
+@media (max-width: 425px) {
+	.products-of-the-week__title {
+		font-size: 30px;
+	}
+}
+
+.products-of-the-week__products {
+	max-width: 1180px;
+	height: 482px;
+	margin-top: 40px;
+	display: flex;
+	
+}
+
+@media (max-width: 1210px) {
+	.products-of-the-week__products {
+		justify-content: center;
+	}
+
+	
+.products-of-the-week__product3 {
+	flex: 1 1 100%;
+}
+
+}
+
+@media (max-width: 860px) {
+	.products-of-the-week__products {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.products-of-the-week__product1, .products-of-the-week__product2, .products-of-the-week__product3 {
+	margin-top: 10px;
+	max-width: 150px;
+}
+
+}
+
+@media (max-width: 817px) {
+	.products-of-the-week__products {
+		margin: 0px auto;
+		display: block;
+		
+	}
+}
+
+
+
+.products-of-the-week__product1, .products-of-the-week__product2, .products-of-the-week__product3 {
+	flex: 1 1 auto;
+	max-width: 380px;
+	height: 482px;
+	box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+	border-radius: 12px;
+	margin-right: 20px;
+}
+
+
+
+.products-of-the-week__product3 {
+	margin-right: 0px;
+}
+
+.products-of-the-week__picture1, .products-of-the-week__picture2, .products-of-the-week__picture3 {
+	height: 213.75px;
+	max-width: 380px;
+	background-image: url('./bg-orange.png');
+	background-size: cover;
+	border-radius: 12px 12px 0px 0px;
+}
+
+..products-of-the-week__picture1 {
+	position: absolute;
+}
+
+.products-of-the-week__new {
+	max-width: 111px;
+	height: 25px;
+	background-color: #FDCFF3;
+	border-radius: 8px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+	position: relative;
+	top: 16.33px;
+	left: 16.73px;
+	text-align: center;
+}
+
+
+.products-of-the-week__last {
+	max-width: 111px;
+	height: 25px;
+	background-color:#FFCF56;
+	border-radius: 8px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+	position: relative;
+	top: -8.33px;
+	left: 143px;
+	text-align: center;
+}
+
+.products-of-the-week__descriptions {
+	margin: 24px 24px 16px 24px;
+}
+
+.products-of-the-week__product-title1, .products-of-the-week__product-title2 , .products-of-the-week__product-title3 {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 36px;
+	color: #2F2F2F;
+}
+
+.products-of-the-week__description {
+	height: 168px;
+	max-width: 332px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.products-of-the-week__text1 , .products-of-the-week__text2, .products-of-the-week__text3 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2F2F2F;
+	flex: 1 1 71%;
+}
+
+@media (max-width: 1210px) {
+	.products-of-the-week__product-title1, .products-of-the-week__product-title2 , .products-of-the-week__product-title3 {
+		font-size: 20px;
+	}
+
+.products-of-the-week__text1 , .products-of-the-week__text2, .products-of-the-week__text3 {
+	font-size: 12px;
+}
+}
+
+.products-of-the-week__button__default, .products-of-the-week__button__disabled {
+	height: 48px;
+	border: 2px solid #42940F;
+	border-radius: 8px;
+	color: #42940F;
+	text-align: center;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.products-of-the-week__button__disabled  { 
+	background-color: #4E4E4E;
+	border: 1px solid #4E4E4E;
+	color: #FFFFFF;
+}
+
+
+.products-of-the-week__button__default:hover {
+	background-color: #42940F;
+	color: #FFFFFF;
+}
+
+.products-of-the-week__button__default:active {
+	background-color:#1F5200;;
+	color: #FFFFFF;
+ }
