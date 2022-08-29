@@ -14,7 +14,7 @@ collapsibleButton.addEventListener('click', function () {
 	}
 }
 )
-*/
+
 
 / при использовании 2 кнопок: одна для скрытия, вторая для отображения /
 
@@ -31,3 +31,37 @@ collapsibleActionHidden.addEventListener('click', function () {
 	collapsibleContent.style.visibility = 'visible';
 }
 )
+
+*/
+
+/ использую API web animation /
+
+
+const collapsibleContent = document.querySelector('.collapsible__content p')
+const collapsibleActionVisible = document.querySelector('.collapsible__action--visible')
+const collapsibleActionHidden = document.querySelector('.collapsible__action--hidden')
+
+collapsibleActionVisible.addEventListener('click', function () {
+	collapsibleContent.animate([
+		{ transform: 'translateX(0)' },
+		{ transform: 'translateX(-1000px)' }
+	],
+		{
+			iterations: 1,
+			duration: 400,
+			fill: 'forwards'
+		})
+})
+
+
+collapsibleActionHidden.addEventListener('click', function () {
+	collapsibleContent.animate([
+		{ transform: 'translateX((-1000px)' },
+		{ transform: 'translateX(0)' }
+	],
+		{
+			iterations: 1,
+			duration: 400,
+			fill: 'forwards'
+		})
+})
