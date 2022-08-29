@@ -42,15 +42,18 @@ const collapsibleActionVisible = document.querySelector('.collapsible__action--v
 const collapsibleActionHidden = document.querySelector('.collapsible__action--hidden')
 
 collapsibleActionVisible.addEventListener('click', function () {
-	collapsibleContent.animate([
-		{ transform: 'translateX(0)' },
-		{ transform: 'translateX(-1000px)' }
-	],
-		{
-			iterations: 1,
-			duration: 400,
-			fill: 'forwards'
-		})
+	if (collapsibleContent.getBoundingClientRect().left == 8) {
+		collapsibleContent.animate([
+			{ transform: 'translateX(0)' },
+			{ transform: 'translateX(-1000px)' }
+		],
+			{
+				iterations: 1,
+				duration: 400,
+				fill: 'forwards'
+			})
+	}
+
 })
 
 
